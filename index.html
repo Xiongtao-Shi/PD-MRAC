@@ -80,6 +80,55 @@ video.video-type8 {
   width: auto !important;
 }
 
+
+/* --- 🚀 新增现代化样式：标题背景块与排版 --- */
+/* --- 🚀 清新现代化样式：标题背景块 --- */
+/* --- 🚀 莫兰迪灰蓝：专业、柔和、清新 --- */
+.hero-container {
+  /* 1. 基础视觉样式保持不变 */
+  background: linear-gradient(135deg, #93a5cf 0%, #e4efe9 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: #2c3e50 !important; 
+  box-shadow: 0 4px 15px rgba(147, 165, 207, 0.1);
+  border-bottom: 1px solid #d1d9e6;
+  border-radius: 12px; /* 可选：如果你希望它像图片一样有圆角，可以加上 */
+
+  /* 2. 核心修改：对齐下方内容 */
+  margin-left: 0 !important;   /* 取消左侧拉伸 */
+  margin-right: 0 !important;  /* 取消右侧拉伸 */
+  margin-top: 0;               /* 如果不希望贴顶，设为0；如果想贴顶，保留 -2em */
+  margin-bottom: 40px;
+  
+  width: auto;                 /* 宽度自动适应父容器内容区 */
+  box-sizing: border-box;
+}
+
+/* 针对内部标题的微调 */
+.hero-container h1 {
+  margin: 0 auto !important;
+  width: 100%;                 /* 确保标题在 Hero 块内居中 */
+}
+
+/* --- 触发图片引用的控制项 --- */
+.markdown-preview video, .markdown-preview img {
+  display: block;
+  margin: 1em auto;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- 🎨 新增：现代化网页背景与容器样式 --- */
+
+html body {
+    /* 使用极浅的灰蓝色渐变作为背景，增加层次感 */
+    background: linear-gradient(180deg, #f8fafd 0%, #eff3f8 100%) !important;
+    background-attachment: fixed; /* 背景固定，滚动时更平滑 */
+    margin: 0;
+    padding: 0;
+}
+
       </style>
       <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
@@ -221,7 +270,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_11_single_compare_L1_nonlinear_3d_t_10.0s.png" class="image-type3"><em>Nonlinear control&nbsp;(RMSE&nbsp;0.5999).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-table-compare-nonlinear-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with nonlinear control (RMSE&nbsp;0.5999).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-table-compare-nonlinear-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with nonlinear control (RMSE&nbsp;0.5999).</em></td>
 </tr>
 </tbody>
 </table>
@@ -255,7 +304,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_10_single_compare_L1_adaptive_tracking_3d_t_10.0s.png" class="image-type3"><em><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive&nbsp;(RMSE&nbsp;0.1509).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-table-compare-L1-adaptive-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive (RMSE&nbsp;0.1509).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-table-compare-L1-adaptive-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive (RMSE&nbsp;0.1509).</em></td>
 </tr>
 </tbody>
 </table>
@@ -271,7 +320,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_14_single_compare_L1_adaptive__bad_case_tracking_3d_t_10.0s.png" class="image-type3"><em><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive&nbsp;(RMSE&nbsp;0.2482).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-compare-L1-adaptive-bad-case-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive (RMSE&nbsp;0.2482).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-compare-L1-adaptive-bad-case-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> adaptive (RMSE&nbsp;0.2482).</em></td>
 </tr>
 </tbody>
 </table>
@@ -288,7 +337,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_13_single_with_tracking_3d_t_10.0s.png" class="image-type3"><em>P-MRAC&nbsp;(RMSE&nbsp;0.1623).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-table-without-best-alpha-0.0-gamma-0.45-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with P-MRAC (RMSE&nbsp;0.1623).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-table-without-best-alpha-0.0-gamma-0.45-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with P-MRAC (RMSE&nbsp;0.1623).</em></td>
 </tr>
 </tbody>
 </table>
@@ -304,7 +353,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_4_single_with_tracking_3d_t_10.0s.png" class="image-type3"><em>P-MRAC&nbsp;(RMSE&nbsp;0.2857).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-table-without-alpha-0.0-gamma-0.25-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with P-MRAC (RMSE&nbsp;0.2857).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-table-without-alpha-0.0-gamma-0.25-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with P-MRAC (RMSE&nbsp;0.2857).</em></td>
 </tr>
 </tbody>
 </table>
@@ -321,7 +370,7 @@ Future-Trend-Aware Filter-based PD-MRAC Method for Quadrotors with Unknown Stron
 <tbody>
 <tr>
 <td style="text-align:center"><img src="figure_png/single/simulation/fig_5_single_with_tracking_3d_t_10.0s.png" class="image-type3"><em>PD-MRAC&nbsp;(RMSE&nbsp;0.0691).</em></td>
-<td style="text-align:center"><video src="video_convert/Simulation/Single/simulation-single-table-with-alpha-0.3-gamma-0.25-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with PD-MRAC (RMSE&nbsp;0.0691).</em></td>
+<td style="text-align:center"><video src="video_convert/simulation/single/simulation-single-table-with-alpha-0.3-gamma-0.25-2024年6月21日.mp4" class="video-type3" controls="" autoplay="" loop="" muted=""></video><em>3D dynamic flight with PD-MRAC (RMSE&nbsp;0.0691).</em></td>
 </tr>
 </tbody>
 </table>
